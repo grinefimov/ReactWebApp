@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Container, Navbar, NavbarBrand, NavItem, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
 
 interface NavMenuState {
-    collapsed: boolean;
+  collapsed: boolean;
 }
 
 export class NavMenu extends Component<{}, NavMenuState> {
   static displayName = NavMenu.name;
 
-  constructor (props: any) {
+  constructor(props: any) {
     super(props);
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
@@ -19,29 +19,29 @@ export class NavMenu extends Component<{}, NavMenuState> {
     };
   }
 
-  toggleNavbar () {
+  toggleNavbar() {
     this.setState({
       collapsed: !this.state.collapsed
     });
   }
 
-  render () {
+  render() {
     return (
       <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" color="dark" dark>
+        <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" bg="dark" variant="dark">
           <Container>
-            <NavbarBrand tag={Link} to="/">ReactWebApp</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-            <Collapse className="d-sm-inline-flex flex-sm-row" isOpen={!this.state.collapsed} navbar>
-              <ul className="navbar-nav flex-grow">
+            <NavbarBrand href="/">ReactWebApp</NavbarBrand>
+            <Navbar.Toggle onClick={this.toggleNavbar} className="mr-2"/>
+            <Navbar.Collapse className="d-sm-inline-flex flex-sm-row">
+              <ul className="navbar-nav">
                 <NavItem>
-                  <NavLink tag={Link} className="text-light" to="/">Home</NavLink>
+                  <Link className="text-light mx-2" to="/">Home</Link>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-light" to="/items">Items</NavLink>
+                  <Link className="text-light mx-2" to="/items">Items</Link>
                 </NavItem>
               </ul>
-            </Collapse>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
       </header>

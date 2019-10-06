@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "React", "React\React.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "..\DataListApp\WebApi\WebApi.csproj", "{66198115-CA24-424A-A57B-592CE6DEC290}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Tests", "..\Tests\WebApi.Tests\WebApi.Tests.csproj", "{98C25AE7-D3A0-403D-9A7E-F0BB3C1F3440}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{66198115-CA24-424A-A57B-592CE6DEC290}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66198115-CA24-424A-A57B-592CE6DEC290}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66198115-CA24-424A-A57B-592CE6DEC290}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98C25AE7-D3A0-403D-9A7E-F0BB3C1F3440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98C25AE7-D3A0-403D-9A7E-F0BB3C1F3440}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98C25AE7-D3A0-403D-9A7E-F0BB3C1F3440}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98C25AE7-D3A0-403D-9A7E-F0BB3C1F3440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
