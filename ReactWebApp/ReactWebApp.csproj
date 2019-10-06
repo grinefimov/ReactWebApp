@@ -21,17 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="client-app\src\components\Counter.tsx" />
-    <None Remove="client-app\src\components\FetchData.tsx" />
     <None Remove="client-app\src\components\Home.tsx" />
+    <None Remove="client-app\src\components\Items.tsx" />
     <None Remove="client-app\src\components\Layout.tsx" />
     <None Remove="client-app\src\components\NavMenu.tsx" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="client-app\src\components\Counter.tsx" />
-    <TypeScriptCompile Include="client-app\src\components\FetchData.tsx" />
     <TypeScriptCompile Include="client-app\src\components\Home.tsx" />
+    <TypeScriptCompile Include="client-app\src\components\Items.tsx" />
     <TypeScriptCompile Include="client-app\src\components\Layout.tsx" />
     <TypeScriptCompile Include="client-app\src\components\NavMenu.tsx" />
   </ItemGroup>
