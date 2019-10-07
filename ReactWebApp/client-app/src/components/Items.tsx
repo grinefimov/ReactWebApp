@@ -1,6 +1,5 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 
 interface Item {
   id: number;
@@ -14,8 +13,6 @@ interface ItemsState {
 }
 
 export class Items extends Component<{}, ItemsState> {
-  static displayName = Items.name;
-
   constructor(props: any) {
     super(props);
     this.state = { items: [], loading: true };
@@ -27,7 +24,7 @@ export class Items extends Component<{}, ItemsState> {
 
   static renderForecastsTable(items: Item[]) {
     return (
-      <table className='table table-striped' aria-labelledby="tabelLabel">
+      <table className="table table-striped">
         <thead>
         <tr>
           <th>ID</th>
@@ -49,7 +46,7 @@ export class Items extends Component<{}, ItemsState> {
   }
 
   render() {
-    let contents = this.state.loading
+    const contents = this.state.loading
       ? <p>
           <em>Loading...</em>
         </p>
