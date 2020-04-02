@@ -1,16 +1,15 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using ReactWebApp;
 using ReactWebApp.Controllers;
 using ReactWebApp.Models;
 using Xunit;
 
-namespace ReactWebApp.UnitTests.Tests
+namespace ReactWebApp.UnitTests
 {
     public class ItemsControllerTests
     {
         [Fact]
-        public async void GetItemsAsync_ShouldReturnAllItems()
+        public void GetItemsAsync_ShouldReturnAllItems()
         {
             // Arrange
             var controller = new ItemsController();
