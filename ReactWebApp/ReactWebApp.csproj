@@ -25,6 +25,7 @@
     <None Remove="client-app\src\components\Items.tsx" />
     <None Remove="client-app\src\components\Layout.tsx" />
     <None Remove="client-app\src\components\NavMenu.tsx" />
+    <None Remove="client-app\src\components\NewItem.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +33,7 @@
     <TypeScriptCompile Include="client-app\src\components\Items.tsx" />
     <TypeScriptCompile Include="client-app\src\components\Layout.tsx" />
     <TypeScriptCompile Include="client-app\src\components\NavMenu.tsx" />
+    <TypeScriptCompile Include="client-app\src\components\NewItem.tsx" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

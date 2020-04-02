@@ -8,8 +8,6 @@ interface NavMenuState {
 }
 
 export class NavMenu extends Component<{}, NavMenuState> {
-  static displayName = NavMenu.name;
-
   constructor(props: any) {
     super(props);
 
@@ -30,7 +28,7 @@ export class NavMenu extends Component<{}, NavMenuState> {
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" bg="dark" variant="dark">
           <Container>
-            <NavbarBrand href="/">ReactWebApp</NavbarBrand>
+            <NavbarBrand><Link className="text-light" to="/">ReactWebApp</Link></NavbarBrand>
             <Navbar.Toggle onClick={this.toggleNavbar} className="mr-2"/>
             <Navbar.Collapse className="d-sm-inline-flex flex-sm-row">
               <ul className="navbar-nav">

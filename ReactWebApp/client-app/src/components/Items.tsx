@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Item {
@@ -22,7 +22,7 @@ export class Items extends Component<{}, ItemsState> {
     this.populateItemsData();
   }
 
-  static renderForecastsTable(items: Item[]) {
+  static renderItemsTable(items: Item[]) {
     return (
       <table className="table table-striped">
         <thead>
@@ -50,12 +50,12 @@ export class Items extends Component<{}, ItemsState> {
       ? <p>
           <em>Loading...</em>
         </p>
-      : Items.renderForecastsTable(this.state.items);
+      : Items.renderItemsTable(this.state.items);
 
     return (
       <div>
         <h1 id="tabelLabel">Items</h1>
-        <Link className="btn btn-primary text-light mb-2" to="/">New Item</Link>
+        <Link className="btn btn-primary text-light mb-2" to="/items/new">New Item</Link>
         {contents}
       </div>
     );
